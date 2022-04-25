@@ -2,7 +2,7 @@
 
 ### Main function names for each task:
 
-| Task     | Это                        |
+| Task     | Function name              |
 | -------- |:--------------------------:|
 | 1        | filter_list                |
 | 2        | first_non_repeating_letter |
