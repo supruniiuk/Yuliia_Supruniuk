@@ -1,13 +1,8 @@
-function digital_root(number) {
-  let sum = 0;
-  let num = number;
-  while (sum % 1 === 0) {
-    if (num == 0) {
-      break;
-    }
-
-    sum += num % 10;
-    num = parseInt(num / 10, 10);
+function digital_root(n) {
+  if (n < 10) {
+    return n;
+  } else if (n % 9 === 0) {
+    return 9;
   }
-  return sum;
+  return n % 9;
 }
