@@ -8,3 +8,5 @@ function first_non_repeating_letter(str) {
     }
   }
 }
+
+console.log(first_non_repeating_letter("sTreSS")); // T
