@@ -10,3 +10,5 @@ function number_of_pairs(arr, target) {
 
   return count;
 }
+
+console.log(number_of_pairs([1, 3, 6, 2, 2, 0, 4, 5], 5)); // 4
