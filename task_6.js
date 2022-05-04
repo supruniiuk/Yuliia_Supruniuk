@@ -26,7 +26,7 @@ function getMinLargerPiv(arr, piv) {
 function nextBigger(num) {
   let digits = num
     .toString()
-    .split('')
+    .split("")
     .map((item) => {
       return parseInt(item, 10);
     });
@@ -51,5 +51,10 @@ function nextBigger(num) {
   right = right.sort((a, b) => a - b);
 
   const result = digits.concat(minEl).concat(right);
-  return +result.join('');
+  return +result.join("");
 }
+
+console.log(nextBigger(12)); // 21
+console.log(nextBigger(513)); // 531
+console.log(nextBigger(2017)); // 2071
+console.log(nextBigger(11)); // -1
