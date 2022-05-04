@@ -6,3 +6,8 @@ function digital_root(n) {
   }
   return n % 9;
 }
+
+console.log(digital_root(16)); // 7
+console.log(digital_root(942)); // 6
+console.log(digital_root(132189)); // 6
+console.log(digital_root(493193)); // 2
