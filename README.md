@@ -19,4 +19,5 @@ cd Yuliia_Supruniuk
 git checkout WebUI
 npm install
 npm test
+npm run unit-test  //after previous ends, or you can test it first
 ```
