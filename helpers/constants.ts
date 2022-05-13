@@ -1,4 +1,4 @@
-import { LoginForm, PlaceOrder } from '../helpers/interfaces';
+import {LoginForm, PlaceOrder} from '../helpers/interfaces';
 
 export const loginInfo: LoginForm = {
     username: "supruniuk",

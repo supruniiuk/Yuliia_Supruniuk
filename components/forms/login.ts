@@ -13,4 +13,5 @@ export async function login(driver, userData: LoginForm) {
   await driver.findElement(usernameInput).sendKeys(userData.username);
   await driver.findElement(passwordInput).sendKeys(userData.password);
   await driver.findElement(confirmLoginBtn).click();
+  await driver.sleep(3000);
 }
