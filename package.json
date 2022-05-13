@@ -1,0 +1,28 @@
+{
+  "name": "selentium-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supruniiuk/Yuliia_Supruniuk.git"
+  },
+  "author": "Yuliia Supruniuk <juliasupruniuk23@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supruniiuk/Yuliia_Supruniuk/issues"
+  },
+  "homepage": "https://github.com/supruniiuk/Yuliia_Supruniuk#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "selenium-webdriver": "^4.1.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.33"
+  }
+}
