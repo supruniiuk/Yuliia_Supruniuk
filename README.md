@@ -1,4 +1,4 @@
-# Yuliia_Supruniuk
+# Yuliia_Supruniuk / WebUI
 
 Test script for https://www.demoblaze.com/
 
