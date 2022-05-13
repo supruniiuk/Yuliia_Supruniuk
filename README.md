@@ -12,6 +12,11 @@ Checking steps:
 7. Reverse what the pop-up **'Thank you for your purchase!'**
 
 ### How to run test?
+Please make sure you have installed node and npm in your system.
+ ```
+ node -v
+ npm -v
+ ```
 Before running make sure you install Selenium WebDriver
 ```
 git clone https://github.com/supruniiuk/Yuliia_Supruniuk.git
