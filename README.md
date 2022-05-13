@@ -12,4 +12,11 @@ Checking steps:
 7. Reverse what the pop-up **'Thank you for your purchase!'**
 
 ### How to run test?
-`npm test`
+Before running make sure you install Selenium WebDriver
+```
+git clone https://github.com/supruniiuk/Yuliia_Supruniuk.git
+cd Yuliia_Supruniuk
+git checkout WebUI
+npm install
+npm test
+```
