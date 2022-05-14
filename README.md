@@ -1,4 +1,5 @@
 # Yuliia_Supruniuk
+Repository for _Software development theory_ course homework
 
-## JS Tasks
-JS homework is on **JS_tasks** branch
+- **JS_tasks** branch - JS homework 
+- **WebUI** branch - Selenium Home task
