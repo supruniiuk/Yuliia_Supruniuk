@@ -14,3 +14,4 @@ export const orderInfo: PlaceOrder = {
     year: 2029,
 };
 
+export const websiteURL = "https://www.demoblaze.com/";

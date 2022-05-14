@@ -1,10 +1,9 @@
 import {Builder, WebDriver, By, until} from 'selenium-webdriver';
 import {Main} from "../components/pages/main";
-import {loginInfo, orderInfo} from "../helpers/constants";
+import {loginInfo, orderInfo, websiteURL} from "../helpers/constants";
 import {placeOrder} from "../components/forms/order";
 
 describe('add', function () {
-    const URL = "https://www.demoblaze.com/";
     let driver: WebDriver;
     let mainPage: Main;
 
@@ -14,14 +13,14 @@ describe('add', function () {
     });
 
     it('open login form', async () => {
-        await mainPage.openURL(URL)
+        await mainPage.openURL(websiteURL)
         await mainPage.openLoginWindow();
         const loginModal = await mainPage.driver.findElement(By.id("logInModal"));
         expect(loginModal).toBeTruthy();
     });
 
     it('login user', async () => {
-        await mainPage.openURL(URL);
+        await mainPage.openURL(websiteURL);
         await mainPage.loginUser(loginInfo);
         const laptopsLink = await driver.findElement(By.linkText("Laptops"));
         expect(laptopsLink).toBeTruthy();

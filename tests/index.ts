@@ -1,16 +1,15 @@
 import {login} from "../components/forms/login";
 import {placeOrder} from "../components/forms/order";
-import {loginInfo, orderInfo} from "../helpers/constants";
+import {loginInfo, orderInfo, websiteURL} from "../helpers/constants";
 
 const {until} = require("selenium-webdriver");
 const {Builder, By} = require("selenium-webdriver");
-const website = "https://www.demoblaze.com/";
 
 async function test() {
     const driver = await new Builder().forBrowser("firefox").build();
     try {
         await driver.manage().window().maximize();
-        await driver.get(website);
+        await driver.get(websiteURL);
         await login(driver, loginInfo);
 
         const laptopsLink = await driver.findElement(By.linkText("Laptops"));
