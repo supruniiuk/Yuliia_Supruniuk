@@ -22,7 +22,7 @@ Before running make sure you install Selenium WebDriver
 git clone https://github.com/supruniiuk/Yuliia_Supruniuk.git
 cd Yuliia_Supruniuk
 git checkout WebUI
-npm install
+npm install --legacy-peer-deps
 npm test
 npm run unit-test  //after previous ends, or you can test it first
 ```

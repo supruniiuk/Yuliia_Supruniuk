@@ -1,14 +1,14 @@
 import {WebDriver} from 'selenium-webdriver';
 
 export class Page {
-    #driver: WebDriver;
+    _driver: WebDriver;
 
     constructor(driver: WebDriver) {
-        this.#driver = driver;
+        this._driver = driver;
     }
 
     get driver(): WebDriver {
-        return this.#driver;
+        return this._driver;
     }
 
     async getURL() {

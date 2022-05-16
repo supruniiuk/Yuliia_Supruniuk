@@ -1,4 +1,4 @@
-import {Page} from "./Page";
+import {Page} from "./page";
 import {By, until} from 'selenium-webdriver';
 import {LoginForm} from "../../helpers/interfaces";
 import {login} from "../forms/login";
