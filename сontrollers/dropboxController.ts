@@ -1,4 +1,4 @@
-import { token } from "../constants/constants";
+import { token } from "../constants/dropbox.constants";
 import {
   deleteFile,
   getFileData,

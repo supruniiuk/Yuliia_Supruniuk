@@ -1,5 +1,5 @@
 import { DropboxFileController } from "../сontrollers/dropboxController";
-import { apiUrl, contentUrl } from "../constants/constants";
+import { apiUrl, contentUrl } from "../constants/dropbox.constants";
 
 const dropboxFileController = new DropboxFileController();
 
