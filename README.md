@@ -1,4 +1,4 @@
-# Yuliia_Supruniuk / WebUI
+# Yuliia_Supruniuk / WebAPI
 
 Test script for https://www.dropbox.com
 
