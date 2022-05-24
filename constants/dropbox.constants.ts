@@ -1,4 +1,4 @@
-const token = "sl.BIK1ex-65mdD21LsnDoL5dMdTAo7lGJi9j8_l2Novl5AKRrhVUxY-V7ocEzGmpqGvxY0PYfjjaMqh22s3u7UAbXBWPd_a-J4qZWncHaTxW3PFmP21awFWNY3WpGvxrk7vHabrY5J"
+const token = "sl.BIMx5H69Hz-XefM3SnuvHAAD3Bu9NYKrOmuKp_4dwdX1oYOTWlD9Ow6FKrNWAiVyJ1U3YRSxn3l7RSJRVErs_dRfIdpYXCjwDs--WoQxr94gB4IS90i9_piQcD7muaZCJpuCqJJP"
 
 const apiUrl = "https://api.dropboxapi.com";
 const contentUrl = "https://content.dropboxapi.com";
