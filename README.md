@@ -13,7 +13,7 @@ Please make sure you have installed node and npm in your system.
  node -v
  npm -v
  ```
-Before running make sure you install Selenium WebDriver
+> **_NOTE:_**  Before running please get access token(https://dropbox.github.io/dropbox-api-v2-explorer/#files_upload Get Token) and paste it in _constants/dropbox.constants.ts_ in _token_.
 ```
 git clone https://github.com/supruniiuk/Yuliia_Supruniuk.git
 cd Yuliia_Supruniuk
