@@ -1,35 +1,19 @@
 import { token } from "../constants/dropbox.constants";
-import {
-  deleteFile,
-  getFileData,
-  postFile,
-} from "../constants/routes.constants";
 import axios, { AxiosResponse } from "axios";
+import { FilesConfiguration } from "../constants/fileConfigurations";
 
 export class DropboxFileController {
-  route: string;
+  filesConfiguration: FilesConfiguration;
 
   constructor() {
-    this.route = "2/files";
+    this.filesConfiguration = new FilesConfiguration(token);
   }
 
-  async upload(url, imagePath): Promise<AxiosResponse> {
-    const path = `${url}/${this.route}/${postFile}`;
+  async upload(image: string): Promise<AxiosResponse> {
     let response = null;
 
     try {
-      response = await axios({
-        method: "post",
-        url: path,
-        headers: {
-          "Content-Type": "application/octet-stream",
-          Authorization: `Bearer ${token}`,
-          "Dropbox-API-Arg": `{"mode":"add","path":"/${imagePath}","mute":false,"autorename":true}`,
-        },
-        data: {
-          binary: `../files/${imagePath}`,
-        },
-      });
+      response = await axios(this.filesConfiguration.uploadConfig(image));
     } catch (error) {
       console.error(error);
     }
@@ -37,22 +21,11 @@ export class DropboxFileController {
     return response;
   }
 
-  async getMeta(url, imagePath): Promise<AxiosResponse> {
-    const path = `${url}/${this.route}/${getFileData}`;
+  async getMeta(image): Promise<AxiosResponse> {
     let response = null;
 
     try {
-      response = await axios({
-        method: "post",
-        url: path,
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        data: {
-          path: `/${imagePath}`,
-        },
-      });
+      response = await axios(this.filesConfiguration.getMetaConfigs(image));
     } catch (error) {
       console.error(error);
     }
@@ -60,22 +33,11 @@ export class DropboxFileController {
     return response;
   }
 
-  async delete(url, imagePath): Promise<AxiosResponse> {
-    const path = `${url}/${this.route}/${deleteFile}`;
+  async delete(image): Promise<AxiosResponse> {
     let response = null;
 
     try {
-      response = await axios({
-        method: "post",
-        url: path,
-        headers: {
-          Authorization: `Bearer ${token}`,
-          "Content-Type": "application/json",
-        },
-        data: {
-          path: `/${imagePath}`,
-        },
-      });
+      response = await axios(this.filesConfiguration.deleteConfigs(image));
     } catch (error) {
       console.error(error);
     }
